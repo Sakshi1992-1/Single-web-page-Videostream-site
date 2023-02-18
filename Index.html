@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <style>
+      /* Custom CSS styles */
+
+      body {
+        position: relative;
+        background: #050026;
+        margin-left: 91px;
+        margin-top: 80px;
+        margin-right: 91px;
+        font-family: "roboto", sans-serif;
+      }
+      .links {
+        padding-bottom: 56px;
+      }
+      .text-links {
+        width: 1124px;
+        height: 29px;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        left: 91px;
+        top: 80px;
+        border-radius: 0px;
+        padding-bottom: -80px;
+      }
+      .text-links li {
+        margin: 0 px;
+        text-decoration: none;
+        overflow-x: auto;
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffffff;
+      }
+      .video-box {
+        padding: 20px;
+        padding-top: 20px;
+      }
+      .video-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding-top: 20px;
+      }
+
+      .video {
+        width: 19%;
+        margin-bottom: 20px;
+      }
+
+      .video iframe {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .Filters {
+        margin-top: 250px;
+        width: calc(100% - 250px);
+        height: 60px;
+        background: #fff;
+        border-top: 1px solid #dbdbdb;
+        border-bottom: 1px solid #dbdbdb;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+      }
+      .filters::-webkit-scrollbar {
+        display: none;
+      }
+
+      .filter-btn {
+        flex: 0 0 auto;
+        padding: 10px 20px;
+        border-radius: 50px;
+        background: #f0f0f0;
+        border: 1px solid #dbdbdb;
+        text-transform: capitalize;
+        margin-right: 10px;
+        color: #242424;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+      }
+
+      .right-side,
+      .left-side {
+        list-style-type: none;
+      }
+
+      .right-side li,
+      .left-side li {
+        display: inline-block;
+      }
+
+      .right-side li a,
+      .left-side li a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        font-weight: bold;
+      }
+      .content {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .channel-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+      }
+
+      .title {
+        width: 100%;
+        height: 40px;
+        overflow: hidden;
+      }
+
+      .channel-name {
+        font-size: 14px;
+        margin: 2px 0;
+        color: #979797;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav container -->
+      <nav class="nav-container">
+        <!-- right nav -->
+        <ul class="right-side">
+          <li><a href="">Home</a></li>
+          <li><a href="">Shorts</a></li>
+          <li><a href="">Subscription</a></li>
+          <li><a href="">Show More ></a></li>
+        </ul>
+        <!-- left nav -->
+        <ul class="left-side">
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-user"></span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="links">
+      <!--Text links -->
+      <ul class="text-links">
+        <li><a href="#">Trending Now</a></li>
+        <li><a href="#">Donald Trump</a></li>
+        <li><a href="#">CES 2023</a></li>
+        <li><a href="#">Lenovo2023 Laptops</a></li>
+        <li><a href="#">Android 15</a></li>
+        <li><a href="#">Apple iphone</a></li>
+        <li><a href="#">Windows 12 News</a></li>
+      </ul>
+    </div>
+    <!-- Buttons -->
+    <div class="Filter">
+      <button class="filter-btn">All</button>
+      <button class="filter-btn">Austrailian Men's cricket Team</button>
+      <button class="filter-btn">Sports leagus</button>
+      <button class="filter-btn">Cameras</button>
+      <button class="filter-btn">Apple</button>
+      <button class="filter-btn">CES 2023</button>
+      <button class="filter-btn">History</button>
+      <button class="filter-btn">Game Shows</button>
+      <button class="filter-btn">Postcasts</button>
+    </div>
+
+    <div class="video-row">
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_1"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_2"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_3"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_4"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_5"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-row">
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_6"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_7"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_8"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_9"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_10"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4>Sports</h4>
+
+    <div class="video-row">
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_6"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_7"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_8"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_9"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/VIDEO_ID_10"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <div class="content">
+          <img src="img/" class="channel-icon" alt="" />
+
+          <div class="info">
+            <p>4K View 30 minutes ago</p>
+            <h4 class="title">
+              MY best DIY 2023. use anything waste make useful things
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
